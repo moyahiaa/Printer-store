@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <title>FeedBack</title>
+  <head>
+
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title></title>
+
+
+    <script src="scripts/script.js"></script>
+
+  </head>
+  <body>
+    <div class="header">
+      <div class="inner_header">
+        <div class="logo_container">
+          <h1>Printer<span>Store</span></h1>
+        </div>
+        <ul class="navigation">
+          <a href="index.html"><li>Home</li></a>
+          <a href="Printer.html"><li>Printer</p></li></a>
+          <a href="Ink.html"><li>Ink</li></a>
+          <a href="FeedBack.html"><li><div class="navigationColor"><p>FeedBack</p></div></li></a>
+        </ul>
+      </div>
+    </div>
+
+<div class="container">    
+  <form action="process.php" method="post"  onsubmit="return validate_form();">    
+
+    <div class="row">    
+      <div class="col-25">    
+        <label for="fname">Name</label>    
+      </div>    
+      <div class="col-75">    
+        <input type="text" id="fname" name="firstname" placeholder="Your Name.." onfocus="myFocusFunctionName()"   onblur="myBlurFunctionName()" onkeypress="check1()">    
+        <div id="error_message"> </div>
+
+      </div>    
+    </div> 
+
+    <div class="row">    
+      <div class="col-25">    
+        <label for="phone">Phone Number</label>    
+      </div>    
+      <div class="col-75">    
+        <input type="tel" id="phone" name="phone" placeholder="Your Phone number.." onfocus="myFocusFunctionPhone()"   onblur="myBlurFunctionPhone()">    
+        <div id="error_message2"> </div>
+
+      </div>    
+    </div>    
+
+    <div class="row">    
+        <div class="col-25">    
+          <label for="email">Email</label>    
+        </div>    
+        <div class="col-75">    
+          <input type="email" id="email" name="email" placeholder="Your Email.." onfocus="myFocusFunctionEmail()"   onblur="myBlurFunctionEmail()">    
+          <div id="error_message3"> </div>
+
+
+        </div>    
+      </div>   
+
+
+
+    <br><br><br><br><hr><br><br><br><br>
+    <div class="row">    
+      <div class="col-25">    
+        <label for="subject">Subject</label>    
+      </div>    
+      <div class="col-75">    
+        <input type="text" id="subject" name="subject" placeholder="Your Subject.." onfocus="myFocusFunctionSubject()"   onblur="myBlurFunctionSubject()">    
+        <div id="error_messageSubject"> </div>
+
+      </div>    
+    </div>  
+
+    <div class="row">   
+      <div class="col-25">    
+        <label for="country">Topics</label>    
+      </div>    
+      
+      <div class="col-75">    
+        <select id="topic" name="Topic" onfocus="myFocusFunctionTopic()"   onblur="myBlurFunctionTopic()">    
+            <option value="0">Select a Topic</option>    
+          <option value="1">Suggestion</option>    
+          <option value="2">Complaint</option>    
+          <option value="3">Idea</option>    
+          <option value="4">Help</option>    
+
+        </select>   
+        <div id="error_messageTopic"> </div>
+ 
+      </div>    
+    </div>  
+
+    <div class="row">    
+      <div class="col-25">    
+        <label for="feed_back">FeedBack</label>    
+      </div>    
+      <div class="col-75">    
+        <textarea id="subjectMSG" name="subjectMSG" placeholder="Write something.." class="textareaFeedBack" onfocus="myFocusFunctionSubjectMSG()"   onblur="myBlurFunctionSubjectMSG()"></textarea>    
+        <div id="error_messageSubjectMSG"> </div>
+
+      </div>    
+    </div>    
+    <div class="row">    
+      <input type="submit" value="Submit">    
+    </div>    
+  </form>    
+</div>    
+
+
+
+  </body>
+</html>
